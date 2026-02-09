@@ -1,11 +1,11 @@
 # After The Move ♟️
+
 **A high-performance, real-time chess platform featuring AI analysis and LLM coaching.**
 
 `After The Move` is an elite-tier chess platform built for speed, scalability, and deep game analysis. It leverages a modern distributed architecture to handle real-time gameplay, spectator synchronization, and AI-driven insights.
 
-
-
 ## 🚀 Key Features
+
 - **Low-Latency Gameplay:** Powered by Go Goroutines and WebSockets for near-instant movement synchronization.
 - **Advanced Matchmaking:** Implementation of the **Glicko-2 rating system** for accurate skill assessment.
 - **Stockfish Integration:** Real-time move evaluation using Stockfish (WASM on client-side for zero-cost analysis).
@@ -15,12 +15,14 @@
 ## 🏗️ Technical Stack
 
 ### Backend (The Core)
+
 - **Language:** Go (Golang) - Chosen for its superior concurrency model and performance.
 - **Communication:** Gin-Gonic (REST API) + Gorilla WebSocket (Real-time).
 - **Database:** **PostgreSQL** (ACID compliant storage) + **Redis** (Real-time game state & caching).
 - **Architecture:** Hexagonal / Clean Architecture to decouple business logic from external drivers.
 
 ### Frontend (The Interface)
+
 - **Framework:** Next.js 14+ (App Router) with TypeScript.
 - **State Management:** Zustand (High-performance, minimal boilerplate).
 - **Visuals:** Tailwind CSS + Radix UI + Lucide Icons.
@@ -31,8 +33,6 @@
 ## 📂 Project Structure
 
 This project follows the **Standard Go Project Layout** and Hexagonal Architecture principles to ensure maintainability and testability.
-
-
 
 ```text
 .
@@ -48,3 +48,4 @@ This project follows the **Standard Go Project Layout** and Hexagonal Architectu
 │   └── pkg/                 # Shared utilities and helpers
 ├── frontend/                # Next.js Application
 └── infra/                   # Docker, Postgres init scripts, and deployment config
+```
